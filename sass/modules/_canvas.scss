@@ -1,0 +1,62 @@
+// --------------------------------------------------------------------------*
+// Destino donde se ingresan los números
+// --------------------------------------------------------------------------*
+.Canvas {
+  margin-top: 20px;
+  padding: 10px;
+  border: 1px solid #ccc;
+
+  // Item a ordenar
+  .item-numero {
+    background-color: #fff;
+    border: 1px solid #73ab2d;
+    color: #73ab2d;
+    display: block;
+    float: left;
+    font-size: 13px;
+    height: 31px;
+    line-height: 31px;
+    text-align: center;
+    width: 31px;
+    margin: 2px;
+  }
+
+  // Bloque
+  &-ordenados {
+    background: #fffb96;
+    height: 35px;
+    margin-bottom: 10px;
+  }
+
+  // Bloque donde se guardan los números
+  &-aleatorios {
+    background-color: $c_verde_1;
+    min-height: 35px;
+    position: relative;
+    &:after {
+      content: '';
+      clear: both;
+      display: block;
+    }
+  }
+
+  &-controls {
+    padding-top: 10px;
+    .btn_ordenar {
+      background-color: $c_verde_2;
+      border-radius: 3px;
+      border: none;
+      color: #fff;
+      cursor: pointer;
+      display: block;
+      font-size: 13px;
+      height: 30px;
+      margin: 0 auto;
+      width: 90px;
+      &:hover {
+        background-color: $c_verde_3;
+      }
+    }
+  }
+
+}

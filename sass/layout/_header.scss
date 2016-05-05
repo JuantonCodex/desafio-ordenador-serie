@@ -1,0 +1,17 @@
+.Header {
+  background-color: $c_azul_1;
+  &-content {
+    margin: 0 auto;
+    max-width: 960px;
+    height: 50px;
+    line-height: 30px;
+    padding: 10px;
+  }
+  &-title {
+    color: #fff;
+    font-size: 22px;
+    font-weight: 600;
+    margin: 0;
+    text-transform: uppercase;
+  }
+}
