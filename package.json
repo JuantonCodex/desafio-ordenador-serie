@@ -1,0 +1,24 @@
+{
+  "name": "desafio-ordenador-serie",
+  "version": "1.0.0",
+  "description": "Desafío FrontEnd",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jcahuana/desafio-ordenador-serie.git"
+  },
+  "keywords": [
+    "frontend",
+    "desafío",
+    "orbis"
+  ],
+  "author": "Juan Cahuana <jcahuanam@gmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jcahuana/desafio-ordenador-serie/issues"
+  },
+  "homepage": "https://github.com/jcahuana/desafio-ordenador-serie#readme"
+}
