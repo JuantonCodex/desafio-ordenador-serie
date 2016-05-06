@@ -4434,11 +4434,19 @@ html, body {
   display: block;
   float: left;
   font-size: 13px;
-  height: 31px;
-  line-height: 31px;
+  height: 35px;
+  line-height: 35px;
   text-align: center;
-  width: 31px;
-  margin: 2px;
+  width: 35px;
+  position: relative;
+}
+
+.Canvas .item-numero.fijo {
+  position: absolute;
+}
+
+.Canvas .item-numero.destino {
+  margin-left: 35px;
 }
 
 .Canvas-ordenados {
