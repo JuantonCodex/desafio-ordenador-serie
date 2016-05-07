@@ -19,7 +19,7 @@
     left: 0;
     height: 80px;
     margin: auto;
-    max-width: 400px;
+    max-width: 350px;
     padding: 10px;
     position: absolute;
     right: 0;
@@ -33,9 +33,20 @@
       padding-right: 10px;
       vertical-align: middle;
       .icon {
+        display: none;
         color: $c_alert;
-        font-size: 26px;
-        display: block;
+        font-size: 24px;
+        text-align: center;
+        &.alert {
+          color: $c_alert;
+        }
+        &.success {
+          color: $c_success;
+          font-size: 30px;
+        }
+        &.is-visible {
+          display: block;
+        }
       }
     }
     .text {

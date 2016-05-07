@@ -13,7 +13,7 @@ html(lang='es')
     link(rel='icon' href='src/img/favicon.png' type='image/x-icon')
 
     //- ----- CSS Files ----- //
-    link(rel='stylesheet', href='https://fonts.googleapis.com/css?family=Work+Sans:400,600', type='text/css')
+    link(rel='stylesheet', href='https://fonts.googleapis.com/css?family=Fira+Sans:400,500', type='text/css')
     link(rel='stylesheet', href='css/style.css')
     
   body
@@ -23,18 +23,23 @@ html(lang='es')
         .Header-content
           h1.Header-title Ordenador de serie
       section.Content
-        .description Ingresa cualquier número.
-        form.frm_ingresar(action="", method="post")
-          input.ipt_numero(type="text", name="ipt_numero", placeholder="", maxlength="3")
-          input.ipt_btn_ingresar(type="submit", value="Ingresar")
+        .IngresoNumeros
+          .IngresoNumeros-description Ingresa cualquier número.
+          form.IngresoNumeros-form(action="", method="post")
+            input.ipt_numero(type="text", name="ipt_numero", placeholder="", maxlength="3")
+            button.btn_ingresar(type="submit")
+              | <i class="icon fa fa-plus" aria-hidden="true"></i>
         .Canvas
-          .Canvas-ordenados
+          .Canvas-brain
+            .image
           .Canvas-aleatorios
           .Canvas-controls
-            button.btn_ordenar Ordenar
+            button.btn_ordenar
+              | <i class="icon fa fa-sort-numeric-asc" aria-hidden="true"></i> Ordenar
 
   script(src='js/vendor/jquery.min.js')
   script(src='js/vendor/jquery.validate.min.js')
   script(src='js/vendor/jquery.numeric.min.js')
   script(src='js/mensaje.js')
-  script(src='js/main.js')
+  script(src='js/ordenar-numeros.js')
+  script(src='js/app.js')

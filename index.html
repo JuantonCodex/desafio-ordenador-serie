@@ -9,13 +9,15 @@
     <meta name="author" content="Juan Cahuana &lt;jcahuanam@gmail.com&gt;">
     <meta name="robots" content="index, follow">
     <link rel="icon" href="src/img/favicon.png" type="image/x-icon">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Work+Sans:400,600" type="text/css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Fira+Sans:400,500" type="text/css">
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
     <div class="Mensaje">
       <div class="Mensaje-overlay"></div>
-      <div class="Mensaje-content"><span class="icon_wrapper"><i class="icon fi-alert"></i></span><span class="text">Mensaje por defecto</span></div>
+      <div class="Mensaje-content"><span class="icon_wrapper">
+          <i class="icon alert fa fa-exclamation-triangle" aria-hidden="true"></i>
+          <i class="icon success fa fa-smile-o" aria-hidden="true"></i></span><span class="text">Mensaje por defecto</span></div>
     </div>
     <div class="MainWrapper">
       <header class="Header">
@@ -24,16 +26,20 @@
         </div>
       </header>
       <section class="Content">
-        <div class="description">Ingresa cualquier número.</div>
-        <form action="" method="post" class="frm_ingresar">
-          <input type="text" name="ipt_numero" placeholder="" maxlength="3" class="ipt_numero">
-          <input type="submit" value="Ingresar" class="ipt_btn_ingresar">
-        </form>
+        <div class="IngresoNumeros">
+          <div class="IngresoNumeros-description">Ingresa cualquier número.</div>
+          <form action="" method="post" class="IngresoNumeros-form">
+            <input type="text" name="ipt_numero" placeholder="" maxlength="3" class="ipt_numero">
+            <button type="submit" class="btn_ingresar"><i class="icon fa fa-plus" aria-hidden="true"></i></button>
+          </form>
+        </div>
         <div class="Canvas">
-          <div class="Canvas-ordenados"></div>
+          <div class="Canvas-brain">
+            <div class="image"></div>
+          </div>
           <div class="Canvas-aleatorios"></div>
           <div class="Canvas-controls">
-            <button class="btn_ordenar">Ordenar</button>
+            <button class="btn_ordenar"><i class="icon fa fa-sort-numeric-asc" aria-hidden="true"></i> Ordenar</button>
           </div>
         </div>
       </section>
@@ -43,5 +49,6 @@
   <script src="js/vendor/jquery.validate.min.js"></script>
   <script src="js/vendor/jquery.numeric.min.js"></script>
   <script src="js/mensaje.js"></script>
-  <script src="js/main.js"></script>
+  <script src="js/ordenar-numeros.js"></script>
+  <script src="js/app.js"></script>
 </html>

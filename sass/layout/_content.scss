@@ -2,48 +2,4 @@
   margin: 0 auto;
   padding: 10px;
   max-width: 960px;
-
-  // --------------------------------------------------------------------------*
-  // Campos y controles para ingresar los números
-  // --------------------------------------------------------------------------*
-  .description {
-    padding: 10px 0;
-  }
-  form.frm_ingresar {
-    position: relative;
-  }
-  .ipt_numero {
-    float: left;
-    width: 100px;
-    margin-right: 10px;
-    height: 30px;
-    padding: 0 5px;
-  }
-  .ipt_btn_ingresar {
-    background-color: $c_azul_1;
-    border-radius: 3px;
-    border: none;
-    cursor: pointer;
-    color: #fff;
-    font-size: 13px;
-    height: 30px;
-    width: 90px;
-    &:hover {
-      background-color: $c_azul_2;
-    }
-  }
-  label.error {
-    background: rgb(238, 30, 24);
-    border-radius: 3px;
-    bottom: 35px;
-    color: #fff;
-    font-size: 13px;
-    height: 30px;
-    left: 0;
-    line-height: 20px;
-    padding: 5px;
-    position: absolute;
-    width: 200px;
-  }
-  
 }
